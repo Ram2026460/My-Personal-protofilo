@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ram Ramavath | DevOps, AWS, Linux & Performance Testing Engineer</title>
+<meta name="description" content="Portfolio of Ram Ramavath, DevOps Engineer specialising in AWS, Linux, JMeter and LoadRunner performance testing.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>">
+<style>
+:root{--bg:#060914;--bg2:#0b1224;--c:#22d3ee;--b:#3b82f6;--p:#a855f7;--t:#e6edf7;--m:#8fa0bd;--g:rgba(255,255,255,.05);--bd:rgba(120,160,255,.18)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--t);font:16px/1.65 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:"Trebuchet MS","Segoe UI",sans-serif;line-height:1.15}
+.mono{font-family:Consolas,"Courier New",monospace}
+canvas#bg{position:fixed;inset:0;z-index:-1}
+#glow{position:fixed;width:420px;height:420px;border-radius:50%;pointer-events:none;z-index:-1;background:radial-gradient(circle,rgba(59,130,246,.18),transparent 65%);transform:translate(-50%,-50%);left:50%;top:30%}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:12px 5%;background:rgba(6,9,20,.75);backdrop-filter:blur(14px);border-bottom:1px solid var(--bd)}
+nav b{font-size:1.1rem;letter-spacing:.5px}
+nav ul{display:flex;gap:22px;list-style:none;font-size:.9rem;color:var(--m)}
+nav ul a:hover{color:var(--c)}
+#mb{display:none;background:none;border:1px solid var(--bd);color:var(--t);font-size:1.3rem;border-radius:8px;padding:2px 10px}
+section{padding:90px 5%;max-width:1200px;margin:auto}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:12px;background:linear-gradient(90deg,var(--t),var(--c));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--m);max-width:640px;margin-bottom:36px}
+.card{background:var(--g);border:1px solid var(--bd);border-radius:16px;padding:22px;backdrop-filter:blur(10px);transition:.35s;position:relative}
+.card:hover{transform:translateY(-6px);border-color:var(--c);box-shadow:0 0 28px rgba(34,211,238,.22)}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.btn{display:inline-block;padding:12px 26px;border-radius:999px;font-weight:600;border:1px solid var(--c);transition:.3s;cursor:pointer;font-size:1rem;color:var(--t);background:transparent}
+.btn.f{background:linear-gradient(90deg,var(--b),var(--p));border-color:transparent;background-size:200%;animation:gs 4s linear infinite}
+.btn:hover{box-shadow:0 0 24px rgba(34,211,238,.5);transform:translateY(-3px)}
+@keyframes gs{50%{background-position:100%}}
+.rv{opacity:0;transform:translateY(34px);transition:opacity .8s,transform .8s}
+.rv.on{opacity:1;transform:none}
+/* hero */
+#hero{min-height:100vh;display:grid;grid-template-columns:1.1fr 1fr;gap:30px;align-items:center;padding-top:110px}
+#hero h1{font-size:clamp(2.6rem,7vw,5rem);letter-spacing:2px;background:linear-gradient(90deg,#fff,var(--c) 55%,var(--p));-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{color:var(--m);margin:10px 0}
+.typ{font-size:1.5rem;color:var(--c);min-height:2.2rem}
+.typ:after{content:"|";animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+#hero p.i{max-width:520px;color:var(--m);margin:12px 0 26px}
+.row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.soc{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.soc a{border:1px solid var(--bd);border-radius:12px;padding:8px 14px;font-size:.9rem;background:var(--g);transition:.3s}
+.soc a:hover{border-color:var(--c);color:var(--c);box-shadow:0 0 18px rgba(34,211,238,.3)}
+.art{width:100%;max-width:560px;justify-self:center;animation:fl 6s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-14px)}}
+.dash{stroke-dasharray:6 6;animation:dm 1.2s linear infinite}
+@keyframes dm{to{stroke-dashoffset:-24}}
+/* about */
+.two{display:grid;grid-template-columns:1fr 1.2fr;gap:36px;align-items:center}
+.stat b{font-size:1.9rem;color:var(--c);display:block}
+.stat span{color:var(--m);font-size:.9rem}
+/* skills */
+.sk h3{margin-bottom:12px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{font-size:.82rem;padding:5px 12px;border-radius:999px;border:1px solid var(--bd);background:rgba(59,130,246,.08);transition:.25s}
+.tags span:hover{background:rgba(34,211,238,.18);border-color:var(--c);transform:scale(1.08) rotate(-2deg)}
+/* flow */
+.flow{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0;margin:20px 0 30px}
+.nd{background:var(--bg2);border:1px solid var(--bd);border-radius:14px;padding:12px 14px;text-align:center;min-width:92px;transition:.3s;box-shadow:0 0 16px rgba(59,130,246,.15)}
+.nd:hover{border-color:var(--c);box-shadow:0 0 24px rgba(34,211,238,.5);transform:scale(1.06)}
+.nd i{font-style:normal;font-size:1.6rem;display:block}
+.nd small{font-size:.76rem;color:var(--m)}
+.ln{width:38px;height:3px;background:linear-gradient(90deg,transparent,var(--c),var(--p),transparent);background-size:200% 100%;animation:ls 1.4s linear infinite;border-radius:3px}
+@keyframes ls{to{background-position:-200% 0}}
+/* aws cards */
+.sv i{font-style:normal;font-size:1.8rem;display:inline-block;transition:.4s}
+.sv:hover i{transform:rotate(360deg) scale(1.25)}
+.sv p{color:var(--m);font-size:.86rem;max-height:0;overflow:hidden;opacity:0;transition:.4s}
+.sv:hover p{max-height:90px;opacity:1;margin-top:6px}
+/* terminal */
+.term{background:#02050d;border:1px solid var(--bd);border-radius:14px;overflow:hidden;box-shadow:0 0 40px rgba(34,211,238,.12)}
+.term .h{background:#0e1730;padding:9px 14px;display:flex;gap:7px;align-items:center;font-size:.8rem;color:var(--m)}
+.term .h u{width:11px;height:11px;border-radius:50%;background:#ff5f56;display:block}
+.term .h u:nth-child(2){background:#ffbd2e}.term .h u:nth-child(3){background:#27c93f}
+#tm{padding:16px;height:330px;overflow:hidden;color:#7CFFB2;font-size:.85rem;white-space:pre-wrap}
+#tm .cm{color:var(--c)}
+/* charts */
+.ch svg{width:100%;height:70px;margin-top:8px}
+.ch path{fill:none;stroke:var(--c);stroke-width:2.5;stroke-dasharray:600;stroke-dashoffset:600}
+.on .ch path,.ch.on path{animation:dr 2s forwards}
+@keyframes dr{to{stroke-dashoffset:0}}
+.ch b{font-size:1.4rem}
+.bar{height:8px;background:rgba(255,255,255,.08);border-radius:8px;overflow:hidden;margin-top:6px}
+.bar div{height:100%;width:0;background:linear-gradient(90deg,var(--b),var(--c));transition:width 1.6s}
+/* vu */
+.track{position:relative;height:90px;border:1px dashed var(--bd);border-radius:14px;overflow:hidden;margin:10px 0 24px;background:var(--g)}
+.vu{position:absolute;left:-20px;font-size:1.1rem;animation:mv 4s linear infinite}
+@keyframes mv{to{left:calc(100% - 50px);opacity:.2}}
+.app{position:absolute;right:10px;top:50%;transform:translateY(-50%);font-size:2rem;filter:drop-shadow(0 0 10px var(--c))}
+.kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-top:16px}
+.kp div{text-align:center;padding:14px}
+.kp b{display:block;font-size:1.5rem;color:var(--c)}
+.kp span{font-size:.78rem;color:var(--m)}
+/* pipeline */
+.pipe .nd{min-width:78px;padding:10px}
+.pipe{position:relative}
+.pipe .ln{position:relative;overflow:visible}
+.pipe .ln:after{content:"";position:absolute;top:-3px;left:0;width:9px;height:9px;border-radius:50%;background:#fff;box-shadow:0 0 10px var(--c);animation:pt 1.6s linear infinite}
+@keyframes pt{to{left:100%}}
+/* projects */
+.pj .pic{height:130px;border-radius:12px;margin-bottom:14px;display:grid;place-items:center;font-size:3rem;background:linear-gradient(135deg,rgba(59,130,246,.35),rgba(168,85,247,.3));position:relative;overflow:hidden}
+.pj .pic:after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.18),transparent 70%);transform:translateX(-120%);transition:.7s}
+.pj:hover .pic:after{transform:translateX(120%)}
+.pj p{color:var(--m);font-size:.9rem;margin:6px 0 10px}
+.pj .btn{margin-top:14px;padding:8px 20px;font-size:.88rem}
+/* timeline */
+.tl{position:relative;padding-left:34px;max-width:620px}
+.tl:before{content:"";position:absolute;left:9px;top:0;bottom:0;width:2px;background:linear-gradient(var(--c),var(--p))}
+.tl div{position:relative;padding:6px 0 18px}
+.tl div:before{content:"";position:absolute;left:-34px;top:12px;width:20px;height:20px;border-radius:50%;background:var(--bg);border:3px solid var(--c);box-shadow:0 0 12px var(--c);transition:.3s}
+.tl div.on:before{animation:pu 2.4s infinite}
+@keyframes pu{50%{box-shadow:0 0 22px var(--p);border-color:var(--p)}}
+/* contact */
+.ct{display:grid;grid-template-columns:1fr 1.1fr;gap:30px}
+.ct a.card{display:block;margin-bottom:14px}
+.ct a.card span{display:block;color:var(--m);font-size:.82rem}
+form{display:grid;gap:12px}
+input,textarea{width:100%;background:rgba(255,255,255,.05);border:1px solid var(--bd);border-radius:10px;padding:12px;color:var(--t);font:inherit}
+input:focus,textarea:focus{outline:2px solid var(--c);border-color:transparent}
+footer{border-top:1px solid var(--bd);text-align:center;padding:40px 5%;color:var(--m);position:relative}
+footer:before{content:"";position:absolute;top:-1px;left:0;height:2px;width:40%;background:linear-gradient(90deg,transparent,var(--c),transparent);animation:fs 5s linear infinite alternate}
+@keyframes fs{to{left:60%}}
+footer b{color:var(--t);font-size:1.3rem;letter-spacing:2px}
+footer .soc{justify-content:center}
+a:focus-visible,button:focus-visible{outline:2px solid var(--c);outline-offset:3px}
+@media(max-width:860px){
+#hero,.two,.ct{grid-template-columns:1fr}
+#mb{display:block}
+nav ul{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--bg2);padding:18px 5%;gap:14px}
+nav ul.o{display:flex}
+section{padding:70px 5%}
+.flow{flex-direction:column}.ln{width:3px;height:26px;background:linear-gradient(180deg,transparent,var(--c),var(--p),transparent);background-size:100% 200%}
+.pipe .ln:after{display:none}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.ch path{stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+<canvas id="bg"></canvas><div id="glow"></div>
+<nav aria-label="Main">
+<b class="mono">&lt;RAM/&gt;</b>
+<button id="mb" aria-label="Menu" aria-expanded="false">☰</button>
+<ul id="mn">
+<li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#aws">AWS</a></li><li><a href="#linux">Linux</a></li><li><a href="#perf">Performance</a></li><li><a href="#pipeline">Pipeline</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<main>
+<section id="hero">
+<div>
+<p class="mono role" style="color:var(--c)">$ whoami</p>
+<h1>RAM RAMAVATH</h1>
+<p class="role">DevOps Engineer | AWS | Linux | Performance Testing</p>
+<div class="typ mono" id="typ" aria-live="off"></div>
+<p class="i">Passionate about building reliable cloud infrastructure, automating deployments, managing Linux environments, and analyzing application performance using modern DevOps and performance testing tools.</p>
+<div class="row"><a class="btn f" href="#skills">View My Skills</a><a class="btn" href="#contact">Contact Me</a></div>
+<div class="soc">
+<a href="mailto:ram243naik@gmail.com">📧 Email</a>
+<a href="http://www.linkedin.com/in/ram-ramavath-93162743b" target="_blank" rel="noopener">🔗 LinkedIn</a>
+<a href="tel:+919908856922">📱 Phone</a>
+<a href="https://github.com/Ram2026460/performance_testing-" target="_blank" rel="noopener">🐙 GitHub</a>
+</div>
+</div>
+<svg class="art" viewBox="0 0 520 440" role="img" aria-label="Illustration of AWS cloud, servers, CI/CD pipeline, terminal and performance graphs">
+<defs><linearGradient id="gr" x1="0" x2="1"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
+<path d="M150 150a45 45 0 0 1 80-25 55 55 0 0 1 105 15 40 40 0 0 1-5 80H165a38 38 0 0 1-15-70z" fill="rgba(59,130,246,.18)" stroke="url(#gr)" stroke-width="3"/>
+<text x="245" y="185" fill="#22d3ee" font-size="30" font-weight="700" text-anchor="middle" font-family="Trebuchet MS">AWS</text>
+<g stroke="#22d3ee" fill="none" class="dash"><path d="M200 222v50M290 222v50M245 222v40"/></g>
+<g fill="#0b1224" stroke="#3b82f6" stroke-width="2"><rect x="30" y="272" width="110" height="130" rx="8"/><rect x="160" y="272" width="190" height="130" rx="8"/><rect x="370" y="272" width="120" height="130" rx="8"/></g>
+<g fill="#22d3ee"><rect x="42" y="288" width="86" height="12" rx="3" opacity=".7"/><rect x="42" y="312" width="86" height="12" rx="3" opacity=".5"/><rect x="42" y="336" width="86" height="12" rx="3" opacity=".7"/><circle cx="50" cy="378" r="4"/><circle cx="66" cy="378" r="4" fill="#a855f7"/></g>
+<text x="172" y="298" fill="#7CFFB2" font-size="12" font-family="Consolas">$ terraform apply</text>
+<text x="172" y="318" fill="#7CFFB2" font-size="12" font-family="Consolas">$ jmeter -n -t plan.jmx</text>
+<text x="172" y="338" fill="#8fa0bd" font-size="12" font-family="Consolas">✔ 5000 req · 0.5% err</text>
+<text x="172" y="358" fill="#7CFFB2" font-size="12" font-family="Consolas">$ _</text>
+<polyline points="382,380 405,350 428,362 452,310 478,326" fill="none" stroke="#22d3ee" stroke-width="3"/>
+<g font-size="22"><text x="40" y="60">🐧</text><text x="440" y="70">⚙️</text><text x="60" y="140">📊</text><text x="430" y="200">🚀</text></g>
+<g stroke="#a855f7" class="dash" fill="none"><path d="M65 130C65 200 100 230 100 270M440 90C470 150 440 230 430 270"/></g>
+</svg>
+</section>
+
+<section id="about"><div class="two">
+<div class="rv card" style="text-align:center"><svg viewBox="0 0 300 260" style="width:100%;max-width:320px" role="img" aria-label="Engineer at a workstation managing cloud infrastructure">
+<rect x="30" y="150" width="240" height="14" rx="5" fill="#16223f"/><rect x="60" y="60" width="180" height="90" rx="8" fill="#02050d" stroke="#22d3ee" stroke-width="2"/>
+<polyline points="75,130 105,100 135,115 175,80 225,95" fill="none" stroke="#22d3ee" stroke-width="3" class="dash"/>
+<circle cx="150" cy="30" r="16" fill="#3b82f6"/><path d="M118 62a32 24 0 0 1 64 0z" fill="#a855f7"/>
+<text x="150" y="215" text-anchor="middle" fill="#8fa0bd" font-size="13" font-family="Consolas">$ deploy --env prod --monitor</text></svg></div>
+<div class="rv"><h2>About Me</h2>
+<p style="color:var(--m)">I am a DevOps and performance testing engineer interested in cloud computing, AWS infrastructure, Linux administration, automation, scalability, monitoring and application reliability. I enjoy designing systems that stay fast and stable under heavy load, and I use JMeter and LoadRunner to measure how applications behave when real traffic arrives.</p>
+<div class="grid" style="margin-top:22px;grid-template-columns:repeat(2,1fr)">
+<div class="card stat"><b data-t="AWS">AWS</b><span>Cloud & Infrastructure</span></div>
+<div class="card stat"><b>Linux</b><span>Server Administration</span></div>
+<div class="card stat"><b>DevOps</b><span>Automation & Deployment</span></div>
+<div class="card stat"><b>Performance</b><span>Load & Performance Testing</span></div>
+</div></div></div></section>
+
+<section id="skills"><h2 class="rv">DevOps Skills</h2><p class="sub rv">Hover over a technology to see it respond.</p><div class="grid" id="sk"></div></section>
+
+<section id="aws"><h2 class="rv">AWS Cloud & Infrastructure</h2><p class="sub rv">Request path from the internet down to the database, with supporting services around it.</p>
+<div class="flow rv" id="f-aws"></div><div class="flow rv" id="f-aws2"></div><div class="grid" id="sv"></div></section>
+
+<section id="linux"><h2 class="rv">Linux Server Administration</h2>
+<div class="two" style="align-items:start"><div class="rv"><p class="sub">Managing servers day to day: keeping services running, watching resources and tracking down problems quickly.</p>
+<div class="tags" id="lx"></div></div>
+<div class="term rv"><div class="h"><u></u><u></u><u></u><span class="mono">ram@aws-server: ~</span></div><div id="tm" class="mono" aria-label="Animated Linux terminal"></div></div></div></section>
+
+<section id="perf"><h2 class="rv">Performance Testing</h2><p class="sub rv">Illustrative demo graphs, not real test results.</p>
+<div class="grid" id="chs"></div>
+<div class="grid" style="margin-top:18px" id="pt"></div></section>
+
+<section id="jmeter"><h2 class="rv">Apache JMeter</h2>
+<div class="flow rv" id="f-jm"></div>
+<div class="track rv" aria-hidden="true"><span class="app">🖥️</span></div>
+<div class="tags rv" id="jt"></div>
+<div class="card rv" style="margin-top:24px"><b>Demo dashboard</b> <span style="color:var(--m);font-size:.82rem">(visual values only)</span>
+<div class="kp" id="kp"></div></div></section>
+
+<section id="loadrunner"><h2 class="rv">Micro Focus / OpenText LoadRunner</h2>
+<div class="flow rv" id="f-lr"></div><div class="tags rv" id="lt"></div></section>
+
+<section id="pipeline"><h2 class="rv">DevOps Workflow</h2><p class="sub rv">From commit to monitored production release.</p>
+<div class="flow pipe rv" id="f-ci"></div></section>
+
+<section id="projects"><h2 class="rv">Projects</h2><div class="grid" id="pj"></div></section>
+
+<section id="journey"><h2 class="rv">Learning Journey</h2><div class="tl" id="tl"></div></section>
+
+<section id="certs"><h2 class="rv">Technical Learning</h2><p class="sub rv">Areas I study and practise. Certifications will be listed here once earned.</p><div class="grid" id="cr"></div></section>
+
+<section id="contact"><h2 class="rv">Let's Connect</h2><div class="ct">
+<div class="rv">
+<a class="card" href="mailto:ram243naik@gmail.com"><span>📧 Email</span>ram243naik@gmail.com</a>
+<a class="card" href="http://www.linkedin.com/in/ram-ramavath-93162743b" target="_blank" rel="noopener"><span>🔗 LinkedIn</span>www.linkedin.com/in/ram-ramavath-93162743b</a>
+<a class="card" href="tel:+919908856922"><span>📱 Phone</span>+91 9908856922</a>
+<a class="card" href="https://github.com/Ram2026460/performance_testing-" target="_blank" rel="noopener"><span>🐙 GitHub</span>github.com/Ram2026460/performance_testing-</a>
+</div>
+<form id="fm" class="rv card">
+<input name="n" placeholder="Name" aria-label="Name" required><input name="e" type="email" placeholder="Email" aria-label="Email" required>
+<input name="s" placeholder="Subject" aria-label="Subject" required><textarea name="m" rows="5" placeholder="Message" aria-label="Message" required></textarea>
+<button class="btn f" type="submit">Send Message</button><small id="fs" style="color:var(--m)"></small></form></div></section>
+</main>
+<footer><b>RAM RAMAVATH</b><p>DevOps Engineer | AWS | Linux | Performance Testing</p>
+<div class="soc"><a href="mailto:ram243naik@gmail.com">Email</a><a href="http://www.linkedin.com/in/ram-ramavath-93162743b" target="_blank" rel="noopener">LinkedIn</a><a href="tel:+919908856922">+91 9908856922</a><a href="https://github.com/Ram2026460/performance_testing-" target="_blank" rel="noopener">GitHub</a></div>
+<p style="margin-top:18px;font-size:.85rem">© 2026 Ram Ramavath. All Rights Reserved.</p></footer>
+
+<script>
+const $=s=>document.querySelector(s),GH="https://github.com/Ram2026460/performance_testing-";
+const tags=(id,a)=>$(id).innerHTML=a.map(x=>`<span>${x}</span>`).join("");
+const flow=(id,a)=>$(id).innerHTML=a.map(([i,l])=>`<div class="nd"><i>${i}</i><small>${l}</small></div>`).join('<span class="ln"></span>');
+/* skills */
+const SK={"🔄 DevOps":["CI/CD","Automation","Infrastructure Management","Deployment","Monitoring","Scalability"],
+"☁️ AWS":["EC2","IAM","VPC","S3","EBS","EFS","RDS","Lambda","CloudWatch","ELB","Auto Scaling","Route 53","ECR","CloudFormation"],
+"🐧 Linux":["Linux Administration","Shell Commands","File Management","Process Management","Services","Networking","System Monitoring","Troubleshooting"],
+"⚡ Performance Testing":["Apache JMeter","LoadRunner","Load Testing","Stress Testing","Performance Testing","Response Time Analysis","Throughput Analysis","Concurrent User Testing","Bottleneck Analysis"]};
+$("#sk").innerHTML=Object.entries(SK).map(([k,v])=>`<div class="card sk rv"><h3>${k}</h3><div class="tags">${v.map(x=>`<span>${x}</span>`).join("")}</div></div>`).join("");
+/* aws */
+flow("#f-aws",[["🌐","Internet"],["🧭","Route 53"],["⚖️","Load Balancer"],["📈","Auto Scaling"],["🖥️","EC2"],["🗄️","RDS"]]);
+flow("#f-aws2",[["🪣","S3"],["📡","CloudWatch"],["🔐","IAM"],["🕸️","VPC"],["λ","Lambda"],["📦","ECR"],["📁","EFS"],["🧱","CloudFormation"]]);
+const AWS=[["🖥️","EC2","Resizable virtual servers for running applications."],["🔐","IAM","Users, roles and policies controlling access."],["🕸️","VPC","Private networks with subnets, routing and gateways."],["🪣","S3","Durable object storage for files and backups."],["🗄️","RDS","Managed relational databases."],["λ","Lambda","Run code on events without managing servers."],["📡","CloudWatch","Metrics, logs and alarms for monitoring."],["⚖️","ELB","Spreads traffic across healthy targets."],["📈","Auto Scaling","Adds or removes instances as demand changes."],["🧭","Route 53","DNS and health-checked routing."],["📦","ECR","Private registry for container images."],["🧱","CloudFormation","Infrastructure defined as code templates."]];
+$("#sv").innerHTML=AWS.map(([i,n,d])=>`<div class="card sv rv"><i>${i}</i> <b>${n}</b><p>${d}</p></div>`).join("");
+/* linux */
+tags("#lx",["Server management","Process management","Networking","File systems","Services","Permissions","Monitoring","Troubleshooting"]);
+const CMD=[["whoami","ram"],["hostname","aws-prod-01"],["uptime"," 10:42:11 up 42 days, load average: 0.21, 0.18, 0.15"],["df -h","/dev/xvda1   30G   11G   19G  37% /"],["free -m","Mem:  7960  2310  4120  (used / free)"],["top","PID 1432 nginx 1.2% CPU | PID 2210 mysqld 3.8% CPU"],["systemctl status nginx","● nginx.service - active (running)"],["ps aux | head -3","root 1 systemd | www-data 1432 nginx"],["ip addr","eth0: inet 10.0.1.25/24 state UP"]];
+let ti=0,tr=false;
+async function term(){if(tr)return;tr=true;const t=$("#tm");
+while(1){t.textContent="";for(const[c,o]of CMD){const l=document.createElement("div");l.innerHTML='<span class="cm">$ </span>';t.append(l);
+for(const ch of c){l.append(ch);await new Promise(r=>setTimeout(r,45))}
+const out=document.createElement("div");out.textContent=o||"";t.append(out);await new Promise(r=>setTimeout(r,650))}
+await new Promise(r=>setTimeout(r,2500))}}
+/* charts */
+const M=[["Response Time","320 ms"],["Throughput","250 req/s"],["Requests/sec","240"],["Concurrent Users","100"],["CPU Utilization","62%"],["Memory Utilization","71%"],["Error Rate","0.5%"]];
+$("#chs").innerHTML=M.map(([n,v],k)=>{let p="M0 "+(60-k*3),y=40;for(let i=1;i<=12;i++){y=Math.max(8,Math.min(62,y+Math.sin(i*1.3+k*2)*14+(k%3-1)*3));p+=` L${i*20} ${y.toFixed(0)}`}
+return `<div class="card ch rv"><small style="color:var(--m)">${n}</small><br><b>${v}</b><svg viewBox="0 0 240 70" preserveAspectRatio="none"><path d="${p}"/></svg></div>`}).join("");
+$("#pt").innerHTML=[["Load Testing","Expected user volume",80],["Stress Testing","Beyond limits to find breaking points",95],["Performance Testing","Speed and stability baseline",70],["Scalability Testing","Behavior as resources grow",65],["Endurance Testing","Long runs to expose leaks",75]].map(([n,d,w])=>`<div class="card rv"><h3>${n}</h3><p style="color:var(--m);font-size:.9rem">${d}</p><div class="bar"><div data-w="${w}"></div></div></div>`).join("");
+/* jmeter / loadrunner */
+flow("#f-jm",[["👥","Users"],["🧪","JMeter"],["🖥️","Application"],["🗃️","Server"],["🗄️","Database"]]);
+$("#jmeter .track").insertAdjacentHTML("afterbegin",Array.from({length:9},(_,i)=>`<span class="vu" style="top:${12+(i%4)*19}px;animation-delay:${-i*.45}s">👤</span>`).join(""));
+tags("#jt",["Thread Groups","HTTP Request","CSV Data Set Config","Assertions","Listeners","Controllers","Timers","Variables","Reports","Non-GUI testing"]);
+$("#kp").innerHTML=[["Users",100,""],["Requests",5000,""],["Response Time",320," ms"],["Throughput",250," req/s"],["Error Rate",0.5,"%"]].map(([l,v,u])=>`<div class="card"><b data-c="${v}" data-u="${u}">0</b><span>${l}</span></div>`).join("");
+flow("#f-lr",[["👥","Virtual Users"],["🎛️","Controller"],["⚙️","Load Generators"],["🖥️","Application"],["🗄️","Database"]]);
+tags("#lt",["Virtual Users","Controller","Load Generators","Performance Metrics","Analysis","Reports"]);
+flow("#f-ci",[["👨‍💻","Developer"],["🌿","Git"],["🔨","Build"],["✅","Test"],["🐳","Docker"],["🔁","CI/CD"],["☁️","AWS"],["🚀","Deploy"],["📡","Monitor"]]);
+/* projects */
+$("#pj").innerHTML=[["📈","AWS Auto Scaling Project","Instances scale out and in with demand behind a load balancer.","AWS EC2, Launch Templates, Auto Scaling, ALB, Target Groups, CloudWatch"],["🕸️","AWS VPC Infrastructure","A custom network with public and private subnets and controlled routing.","VPC, Subnets, Route Tables, Internet Gateway, NAT Gateway, Security Groups"],["⚡","Performance Testing","Load and stress tests that measure response time and throughput.","JMeter, Load Testing, Stress Testing, Performance Metrics"],["🐧","Linux Server Administration","Hands-on server setup, service management and troubleshooting.","Linux, Shell Commands, Services, Monitoring, Troubleshooting"]].map(([i,n,d,t])=>`<div class="card pj rv"><div class="pic">${i}</div><h3>${n}</h3><p>${d}</p><div class="tags">${t.split(", ").map(x=>`<span>${x}</span>`).join("")}</div><a class="btn" href="${GH}" target="_blank" rel="noopener">View Project</a></div>`).join("");
+/* timeline & learning */
+$("#tl").innerHTML=["AWS Fundamentals","EC2 & IAM","VPC & Networking","Storage Services","Load Balancing","Auto Scaling","CloudWatch","Lambda","Performance Testing","JMeter","LoadRunner","DevOps & Automation"].map(x=>`<div class="rv"><b>${x}</b></div>`).join("");
+$("#cr").innerHTML=[["☁️","AWS"],["🔄","DevOps"],["🐧","Linux"],["⚡","Performance Testing"],["🧪","JMeter"],["🎛️","LoadRunner"]].map(([i,n])=>`<div class="card rv" style="text-align:center;border-style:dashed"><div style="font-size:2rem">${i}</div><b>${n}</b><p style="color:var(--m);font-size:.82rem">Learning in progress</p></div>`).join("");
+/* reveal, counters, bars, terminal */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const x=e.target;x.classList.add("on");
+x.querySelectorAll("[data-w]").forEach(b=>b.style.width=b.dataset.w+"%");
+x.querySelectorAll("[data-c]").forEach(c=>{const T=+c.dataset.c,u=c.dataset.u,t0=performance.now();(function s(n){const p=Math.min((n-t0)/1600,1),v=T*p;c.textContent=(T%1?v.toFixed(1):Math.round(v).toLocaleString())+u;p<1&&requestAnimationFrame(s)})(t0)});
+if(x.id==="linux")term();io.unobserve(x)}),{threshold:.15});
+document.querySelectorAll(".rv,#linux,#jmeter").forEach(e=>io.observe(e));
+/* typing */
+const W=["DevOps Engineer","AWS Engineer","Linux Engineer","Performance Testing Engineer","JMeter","LoadRunner"];let wi=0,ci=0,del=0;
+(function ty(){const w=W[wi];ci+=del?-1:1;$("#typ").textContent=w.slice(0,ci);let d=del?35:80;
+if(!del&&ci===w.length){del=1;d=1400}else if(del&&!ci){del=0;wi=(wi+1)%W.length;d=300}setTimeout(ty,d)})();
+/* particles */
+const cv=$("#bg"),cx=cv.getContext("2d");let P=[],mx=-999,my=-999;
+function rs(){cv.width=innerWidth;cv.height=innerHeight;P=Array.from({length:Math.min(70,innerWidth/18)},()=>({x:Math.random()*cv.width,y:Math.random()*cv.height,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4}))}
+rs();addEventListener("resize",rs);
+(function dr(){cx.clearRect(0,0,cv.width,cv.height);P.forEach((a,i)=>{a.x=(a.x+a.vx+cv.width)%cv.width;a.y=(a.y+a.vy+cv.height)%cv.height;cx.fillStyle="rgba(34,211,238,.7)";cx.beginPath();cx.arc(a.x,a.y,1.6,0,7);cx.fill();
+for(let j=i+1;j<P.length;j++){const b=P[j],d=Math.hypot(a.x-b.x,a.y-b.y);if(d<120){cx.strokeStyle=`rgba(59,130,246,${.25*(1-d/120)})`;cx.beginPath();cx.moveTo(a.x,a.y);cx.lineTo(b.x,b.y);cx.stroke()}}});requestAnimationFrame(dr)})();
+addEventListener("mousemove",e=>{const g=$("#glow");g.style.left=e.clientX+"px";g.style.top=e.clientY+"px"});
+/* menu & form */
+const mb=$("#mb"),mn=$("#mn");mb.onclick=()=>{const o=mn.classList.toggle("o");mb.setAttribute("aria-expanded",o)};mn.onclick=e=>e.target.tagName==="A"&&(mn.classList.remove("o"),mb.setAttribute("aria-expanded",false));
+$("#fm").onsubmit=e=>{e.preventDefault();const f=e.target;location.href=`mailto:ram243naik@gmail.com?subject=${encodeURIComponent(f.s.value)}&body=${encodeURIComponent(f.m.value+"\n\nFrom: "+f.n.value+" ("+f.e.value+")")}`;$("#fs").textContent="Opening your email app to send the message."};
+</script>
+</body>
+</html>
